@@ -5,7 +5,7 @@ from flask_restx import reqparse, Resource
 from flask import redirect, request
 
 
-main = api.namespace("/", description="Main API")
+main = api.namespace("", description="Main API")
 main_query_model = reqparse.RequestParser()
 main_query_model.add_argument("link", type=str, required=True, help="Query", location="args")
 
